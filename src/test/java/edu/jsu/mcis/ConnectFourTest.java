@@ -25,8 +25,18 @@ public class ConnectFourTest{
     }
     
     @Test(expected=ColumnFullException.class)
-    public void testDroppingOnAFullColumnShouldThrowException() {
-        
+    public void testDroppingOnAFullColumnShouldThrowException()
+	{
+         ConnectFour c = new ConnectFour();
+		 c.dropToken(2);
+		 c.dropToken(2);
+		 c.dropToken(2);
+		 c.dropToken(2);
+		 c.dropToken(2);
+		 c.dropToken(2);
+		 c.dropToken(2);
+		 c.dropToken(2);
+		 
     }
     
 }
